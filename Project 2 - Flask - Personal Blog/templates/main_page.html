@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Document</title>
+</head>
+<body class="page">
+    <div class="top_square"></div>
+    <div>
+        <h1 class="title">Travel Guide</h1>
+    </div>
+
+    <!--ARTICLES-->
+    <div class="main_panel">
+        <h2>Whats new</h2>
+        
+        {% for post in all_posts: %}
+        <div class="article_preview">
+            <h1 class="id">{{post["id"]}}</h1>
+                <div class="container">
+                    <img src="../static/travel_0{{post['id']}}.jpg" alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">{{post["image_text"]}}</div>
+                    </div>
+                </div>
+            <h2 class="title_h2">{{post["title"]}}</h2>
+            <h3>{{post["subtitle"]}}</h3>
+                <div class="button">
+                    <a href="{{ url_for('read_page', num = post['id']) }}" class="read_button">Read article</a>
+                </div>
+                <div>
+                    <p>Posted: {{post["post_date"]}}</p>
+                </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</body>
+<footer>
+    <p class="footer">
+        Copyright (©) 2024
+    </p>
+</footer>
+</html>

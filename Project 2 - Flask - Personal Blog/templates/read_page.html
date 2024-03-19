@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Document</title>
+</head>
+<body class="page">
+    <div class="top_square"></div>
+    <div>
+        <h1 class="title">{{post.title}}</h1>
+    </div>
+
+    <!--ARTICLES-->
+    <div class="main_panel">
+        <h2>{{ post.id }}: {{ post.title }}</h2>
+            <div class="article_preview">
+                <h3>{{post.subtitle}}</h3>
+                    <p>
+                        {{ post.body }}
+                    </p>
+                    {% for x in range(1,5): %}
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="../static/01_0{{ x }}.jpg">
+                                <img src="../static/01_0{{ x }}.jpg" alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                <a href="{{ url_for('main_page') }}" class="read_button">Back</a>
+            </div>
+    </div>
+</body>
+<footer>
+    <p>
+
+    </p>
+</footer>
+</html>
