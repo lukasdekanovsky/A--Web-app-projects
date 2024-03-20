@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Document</title>
+</head>
+<body class="body_area">
+    <!--------------HEADER------------>
+    <div class="header">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-0" width="40" height="32"><img src="../static/images/header.png" alt="" height="35"></svg>
+                <span class="fs-4">Project title: {{ project.title}}</span>
+            </div>
+    
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="{{ url_for('desktop_apps')}}" class="nav-link">Back</a>
+                </li>
+            </ul>
+            </header>
+        </div>
+    </div>
+    <!--------------Project description------------>
+    <div class="container my-5">
+
+        <div class="homepage_panel">
+            <p class="project_technologies">Technologies used: <p class="bold">{{project.technologies}}</p></p>
+        </div>
+        <!--DESCRIPTION INTRO-->
+        <div class="homepage_panel">
+            <p class="project_description">{{project.description_intro}}</p>
+            <img class="project_image_main"src="../static/images/project_images/{{project.image_code}}1.png" alt="" width="50%">
+        </div>
+        <!--DESCRIPTION COSE + 4 code img-->
+        <div class="homepage_panel">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <h1 class="display-4 fw-bold text-body-emphasis">Code<h3>Part 1</h3></h1>
+                    <div>
+                        <p class="project_description_code">{{project.description_code}}</p>
+                    </div>
+                <div class="overflow-hidden">
+                    <div class="container">
+                        <img src="../static/images/project_images/{{project.image_code}}2.png" class="project_image_code" alt="Example image" width="90%" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homepage_panel">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <div class="overflow-hidden">
+                    <div class="container">
+                        <img src="../static/images/project_images/{{project.image_code}}3.png" class="project_image_code" alt="Example image" width="90%" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homepage_panel">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <div class="overflow-hidden">
+                    <div class="container">
+                        <img src="../static/images/project_images/{{project.image_code}}4.png" class="project_image_code" alt="Example image" width="90%" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homepage_panel">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <div class="overflow-hidden">
+                    <div class="container">
+                        <img src="../static/images/project_images/{{project.image_code}}5.png" class="project_image_code" alt="Example image" width="90%" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="homepage_panel">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <h1 class="display-4 fw-bold text-body-emphasis">Code<h3>Part 2</h3></h1>
+                    <div>
+                        <p class="project_description_code">{{project.description_code2}}</p>
+                    </div>
+                <div class="overflow-hidden">
+                    <div class="container">
+                        <img src="../static/images/project_images/{{project.image_code}}6.png" class="project_image_code" alt="Example image" width="90%" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

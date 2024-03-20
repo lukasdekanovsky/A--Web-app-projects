@@ -1,0 +1,168 @@
+.body_area {
+    background-image: url("../images/bg.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+    margin-bottom: 50px;
+}
+
+.fs-4 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: rgb(252, 252, 252);
+    margin-left: 20px;
+}
+
+.header_par {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+    text-transform: lowercase;
+    margin-left: 20px;
+    margin-top: 22px;
+    color: white;
+}
+
+.nav-link {
+    background-color: rgba(255, 255, 255, 0.74);
+    color: rgb(3, 0, 0);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.nav-link:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer {
+    position: fixed;
+    height: 100px;
+    background-color: rgba(251, 251, 251, 0.295);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.header {
+    height: 115px;
+    background-color: rgba(251, 251, 251, 0.295);
+    
+}
+
+.text-body-secondary {
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color)!important;
+}
+
+.bi {
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
+
+.homepage_panel {
+    background-color: #ffffffa9;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.my_avatar {
+    border-radius: 7%;
+    padding-bottom: 20px;
+}
+
+.btn {
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.technologies {
+    margin-bottom: 50px;
+}
+
+.shadow-lg {
+    background-color: rgba(255, 255, 255, 0.242);
+    border: 1px solid rgba(0, 0, 0, 0.263);
+    border-radius: 7%;
+    margin-bottom: 20px;
+}
+
+.field_selection {
+    background-color: rgba(255, 255, 255, 0.81);
+    margin-left: 16%;
+    margin-right: 16%;
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: rgba(128, 238, 250, 0.497);
+    color: black;
+}
+
+.btn-outline-secondary {
+    background-color: rgba(129, 226, 250, 0.508);
+    color: black;
+}
+
+.image {
+    border-radius: 7%;
+    margin-top: 10px;
+}
+
+.bold_text {
+    font-weight: bold
+}
+
+.technologies_highlight {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.51);
+}
+
+.card_body {
+    opacity: 0.5;
+}
+
+.white_color {
+    background-color: white;
+}
+
+.project_technologies {
+    padding: 30px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.project_description {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.project_description_code {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.project_image_main {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.project_image_code {
+    border-radius: 10px;
+    height: 100%;
+}
