@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Lukáš Děkanovský portfolio</title>
+</head>
+<body class="index-gradient">
+    <!-----------MAIN----------------------------------------------------->
+    
+    <!-----------Personal welcome and short introduction--------->
+    <div class="vh-100">
+        <div class="container h-100">
+            <div class="row d-flex align-items-center h-100">
+
+                <!--CARD A introduction-->
+                <div class="col-md-6">
+                    <div class="fade">
+                        <div class="main-description">
+                            
+                            <h1 class="mb-4 opacity-90" style="color: hsl(218, 81%, 95%);">Lukáš Děkanovský, PhD</h1>
+                            <h5 class="mb-4 opacity-80" style="color: hsl(218, 81%, 90%);">Nanotechnology of semiconductors and python developer junior</h5>
+                            <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%);">This is my personal webpage demonstrating my key technological knowldge. Open for cooperation</p>
+                            
+                        </div>
+                        
+                        <a href="{{url_for('contact')}}" class="button_a" role="button"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" class="ionicon" viewBox="0 0 512 512"><path d="M441.6 171.61L266.87 85.37a24.57 24.57 0 00-21.74 0L70.4 171.61A40 40 0 0048 207.39V392c0 22.09 18.14 40 40.52 40h335c22.38 0 40.52-17.91 40.52-40V207.39a40 40 0 00-22.44-35.78z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M397.33 368L268.07 267.46a24 24 0 00-29.47 0L109.33 368M309.33 295l136-103M61.33 192l139 105" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                            <span style="font-weight: bold;">Contact</span> 
+                        </a>
+                        <a href="{{url_for('portfolio')}}" class="button_a" role="button" data-ripple-color="hsl(218, 41%, 45%)"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" width="20px" viewBox="0 0 512 512"><rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/><path d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/></svg>
+                            <span style="font-weight: bold;">Portfolio</span> 
+                        </a>
+                        <a href="{{url_for('blog')}}" class="button_b" role="button"> 
+                            <span style="font-weight: bold;">Blog</span> 
+                        </a>
+                        
+                        <br>
+                        
+                    </div>
+                </div>
+                <!--CARD B technologies-->
+                <div class="col-md-4 offset-md-2 position-relative">
+
+                    <div id="shape-1" class="position-absolute fade fade-delay-small"></div>
+                    <div id="shape-2" class="position-absolute fade fade-delay-small"></div>
+                    <div id="shape-3" class="position-absolute fade fade-delay-small"></div>
+
+                    <div id="card-custom" class="card shadow-6 rounded-5 fade fade-delay-medium" data-tilt>
+                        <div class="card-body p-5">
+                            <h2>
+                                <span class="card-description">Technologies</span>
+                            </h2>
+                        </div>
+                        <div class="card-footer border-0 px-1">
+                            <div class="container mb-5 mx-2 text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5><span class="card-description">Python</span></h5>
+                                        <img src="../static/images/technologies/python.png" alt="" class="my-2" width="60px">
+                                        <h5><span class="card-description">Django</span></h5>
+                                        <img src="../static/images/technologies/django.png" alt="" class="my-2" width="60px">
+                                        <h5><span class="card-description">HTML CSS</span></h5>
+                                        <img src="../static/images/technologies/html-css-js.png" alt="" class="my-2" width="70px">
+                                    </div>
+                                    <div class="col">
+                                        <h5><span class="card-description">AI</span></h5>
+                                        <img src="../static/images/technologies/ai.png" alt="" class="my-2" width="60px">
+                                        <h5><span class="card-description">Bootstrap</span></h5>
+                                        <img src="../static/images/technologies/bootstrap.png" alt="" class="my-2" width="80px">
+                                        <h5><span class="card-description">Flask</span></h5>
+                                        <img src="../static/images/technologies/flask.png" alt="" class="my-2" width="85px">
+                                    </div>
+                                    <div class="col">
+                                        <h5><span class="card-description">GitHub</span></h5>
+                                        <img src="../static/images/technologies/github.png" alt="" class="my-2" width="110px">
+                                        <h5><span class="card-description">SQL</span></h5>
+                                        <img src="../static/images/technologies/sql.png" alt="" class="my-2" width="75px">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!----------FOOTER---------->
+    
+    
+    <script type="text/javascript" src="../static/js/vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
